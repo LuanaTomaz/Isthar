@@ -1,0 +1,23 @@
+PROJETO ISHTAR — COMO ABRIR
+
+1. Extraia a pasta "Ishtar" do arquivo ZIP.
+2. Abra a pasta no Visual Studio Code.
+3. Abra o arquivo index.html no navegador, ou use a extensão Live Server se já estiver instalada.
+4. Use o menu para navegar entre Início, Livros, Meu perfil e Sobre.
+5. Na página Meu perfil, preencha os campos e envie. A página formAction.html mostrará as respostas recebidas pela URL (GET).
+6. Em about.html, troque [seu nome] pelo seu nome antes de entregar.
+
+ESTRUTURA
+- index.html: página inicial e recomendações
+- form.html: formulário de perfil
+- formAction.html: resultado do formulário
+- about.html: apresentação do projeto
+- css/style.css: estilos do site
+- js/script.js: menu, sinopses e validação do formulário
+- js/result.js: leitura dos parâmetros GET
+- imagens/: imagens fornecidas para o projeto
+
+OBSERVAÇÕES
+- O site utiliza HTML, CSS e JavaScript puro, sem frameworks.
+- As fontes do Google Fonts precisam de internet; há fontes alternativas no CSS.
+- As respostas do formulário são demonstrativas e não são armazenadas em banco de dados.
