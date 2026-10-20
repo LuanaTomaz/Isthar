@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seu perfil literário | Ishtar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Patrick+Hand:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="result.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand-mark" href="index.html" aria-label="Ishtar, página inicial"><img src="logo.jpg" alt="Ilustração de livros botânicos"></a>
+    <div class="brand-copy"><a class="brand-name" href="index.html">Ishtar</a><p>Encontre sua próxima história favorita.</p></div>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Menu principal"><a href="index.html">Início</a><a href="index.html#livros">Livros</a><a href="form.html" aria-current="page">Meu perfil</a><a href="about.html">Sobre</a></nav>
+  </header>
+  <main class="inner-page section-wrap result-page">
+    <div class="page-heading"><p class="eyebrow">Seu cantinho literário</p><h1 id="greeting">Seu perfil de leitor</h1><p>Que bom ter você por aqui! Este é o seu pequeno universo literário.</p></div>
+    <section class="profile-result" aria-live="polite">
+      <span class="small-flower" aria-hidden="true">✿</span>
+     <H6> Todo leitor tem uma história.
+Queremos conhecer os livros e os mundos que fazem seus olhos brilharem.
+
+“Entre uma página e outra, a gente também se descobre.” </H6>
+      <h2>Seu perfil de leitor</h2>
+      <p class="result-intro" id="result-message">Cada leitor tem uma história. Vamos descobrir a sua.</p>
+      <dl class="result-list">
+        <div><dt>Nome</dt><dd id="result-nome">—</dd></div>
+        <div><dt>Gênero favorito</dt><dd id="result-genero">—</dd></div>
+        <div><dt>Livro favorito</dt><dd id="result-livro">—</dd></div>
+        <div><dt>Frequência de leitura</dt><dd id="result-frequencia">—</dd></div>
+        <div><dt>Livros por mês</dt><dd id="result-quantidade">—</dd></div>
+        <div><dt>Deseja sugestões?</dt><dd id="result-sugestoes">—</dd></div>
+      </dl>
+      <p class="result-email">E-mail informado: <span id="result-email">—</span></p>
+      <div class="result-actions"><a class="button button-primary" href="form.html">Editar respostas</a><a class="text-link" href="index.html">Voltar ao início</a></div>
+    </section>
+    <p class="privacy-note">Projeto demonstrativo: os dados são enviados pela URL e não são armazenados em um banco de dados.</p>
+  </main>
+  <footer class="site-footer compact-footer"><a class="footer-title" href="index.html">Ishtar</a><p>Um espaço para quem encontra mundos entre páginas.</p><p class="copyright">© 2026 Ishtar · Projeto acadêmico</p><div class="footer-bottom">
+</body>
+</html>

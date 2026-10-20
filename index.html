@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ishtar: encontre sua próxima história favorita.">
+  <title>Ishtar | Seu universo literário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Patrick+Hand:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand-mark" href="index.html" aria-label="Ishtar, página inicial">
+      <img src="logo.jpg" alt="Ilustração de livros botânicos">
+    </a>
+    <div class="brand-copy">
+      <a class="brand-name" href="index.html">Ishtar</a>
+      <p>Encontre sua próxima história favorita.</p>
+    </div>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Menu principal">
+      <a href="index.html" aria-current="page">Início</a>
+      <a href="#livros">Livros</a>
+      <a href="form.html">Meu perfil</a>
+      <a href="about.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Um universo entre páginas</p>
+        <h1>Livros nos dão um lugar para ir quando precisamos permanecer onde estamos.</h1>
+        <p class="quote-author">— Mason Cooley</p>
+        <p class="hero-description">Encontre histórias que combinam com você e descubra sua próxima história favorita. Existe um mundo inteiro esperando entre páginas.</p>
+        <a class="button button-primary" href="form.html">Criar um perfil <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-image">
+        <img src="livros-destaque.jpg" alt="Livros abertos em um ambiente rosado">
+      </div>
+    </section>
+
+    <div class="quote-band">
+      <p>“Ler é viajar sem sair do lugar”</p>
+    </div>
+
+    <section class="books-section section-wrap" id="livros">
+      <p class="eyebrow">Encontre sua próxima leitura aqui</p>
+      <h2>Favoritos que talvez te encantem</h2>
+      <div class="book-grid">
+        <article class="book-card">
+          <div class="book-cover"><img src="sangue-e-cinzas.jpg" alt="Capa do livro Sangue e Cinzas"></div>
+          <button class="button button-soft synopsis-button" data-title="Sangue e Cinzas" data-synopsis="Uma fantasia repleta de mistérios, escolhas difíceis e segredos que podem mudar tudo. Ideal para quem gosta de mundos intensos e reviravoltas.">Ler sinopse</button>
+        </article>
+        <article class="book-card">
+          <div class="book-cover"><img src="a-razao-do-amor.jpg" alt="Capa do livro A Razão do Amor"></div>
+          <button class="button button-soft synopsis-button" data-title="A Razão do Amor" data-synopsis="Uma comédia romântica que mistura ciência, convivência inesperada e sentimentos que desafiam qualquer hipótese.">Ler sinopse</button>
+        </article>
+        <article class="book-card">
+          <div class="book-cover"><img src="a-toca-das-raposas.jpg" alt="Capa do livro A Toca das Raposas"></div>
+          <button class="button button-soft synopsis-button" data-title="A Toca das Raposas" data-synopsis="Uma história de competição, lealdade e personagens complexos, perfeita para quem procura uma leitura intensa.">Ler sinopse</button>
+        </article>
+        <article class="book-card">
+          <div class="book-cover"><img src="nunca-minta.jpg" alt="Capa do livro Nunca Minta"></div>
+          <button class="button button-soft synopsis-button" data-title="Nunca Minta" data-synopsis="Um suspense psicológico cheio de segredos e pistas inquietantes, feito para quem gosta de tentar desvendar o mistério antes do final.">Ler sinopse</button>
+        </article>
+      </div>
+      <div class="synopsis-panel" id="synopsis-panel" hidden aria-live="polite">
+        <button class="close-panel" type="button" aria-label="Fechar sinopse">×</button>
+        <p class="eyebrow">Uma espiadinha na história</p>
+        <h3 id="synopsis-title"></h3>
+        <p id="synopsis-text"></p>
+      </div>
+    </section>
+
+    <section class="profile-cta section-wrap">
+      <div>
+        <p class="eyebrow eyebrow-light">Cada leitor é único</p>
+        <h2>Qual história está esperando por você?</h2>
+        <p>Conte um pouco sobre seus gostos literários.</p>
+      </div>
+      <a class="button button-pale" href="form.html">Criar um perfil <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-title" href="index.html">Ishtar</a>
+    <p>Um espaço para quem encontra mundos entre páginas.</p>
+    <p class="copyright">© 2026 Ishtar · Projeto acadêmico</p>
+    <div class="footer-bottom">
+  <dialog class="synopsis-dialog" id="synopsis-dialog">
+    <button class="close-dialog" aria-label="Fechar" type="button">×</button>
+    <p class="eyebrow">Uma espiadinha na história</p>
+    <h2 id="dialog-title"></h2>
+    <p id="dialog-text"></p>
+  </dialog>
+</body>
+</html>
